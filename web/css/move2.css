@@ -1,0 +1,201 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 6, 2016, 6:38:23 PM
+    Author     : ejuaobr
+*/
+/*
+body{
+    font-family: 'Baloo Chettan', cursive !important;
+}
+*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    
+    /*font-size:50px;*/
+    font-family: 'Baloo Chettan', cursive;
+}
+h2{
+    
+    /*font-size:30px;*/
+    font-family: 'Baloo Chettan', cursive;
+}
+h3{
+    
+    /*font-size:20px;*/
+    font-family: 'Baloo Chettan', cursive;
+}
+.jumbotron{
+    background:none;
+}
+textarea {
+    resize: none;
+}
+
+.container-full{
+    padding-left:15px !important; 
+    padding-right:15px !important;
+}
+.row-full{
+    padding-left:-15px; 
+    padding-right:-15px;
+}
+
+.move-section{
+    height:450px;
+}
+.move-carousel{
+    height:550px;
+    color:#FFF; 
+    background-color:#0d6aad;
+}
+
+.move-carousel-item{
+    padding-top:5px;
+    padding-bottom:5px;
+    
+}
+.move-title{
+    /*font-size:80px;*/
+    
+}
+.move-carousel-text{
+    /*font-size:25px;*/
+}
+.move-blue{
+    color:#0d6aad;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.image-move{
+    height:375px;
+    width:375px;
+    margin:auto;
+}
+
+.move-center-content{
+    margin-top:15%;
+    margin-bottom:15%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navbar-custom{
+   opacity:0.8;
+   font-size:16px;
+   font-family: 'Baloo Chettan', cursive;
+}
+.navar-custom a{
+    color:#0d6aad;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+    color:red;
+}
+
+.footer-move{
+    height: 300px;
+    color:#ff0084;
+}
+.footer-move li{
+    padding-top:10px;
+    padding-bottom:10px; 
+}
+
+#video{
+    float: right;
+    margin-bottom: 40px;
+}
+
+
+ul.blueBullet {
+    list-style-image: url('../img/bulletsLogo.png');
+    margin-right:15% !important; 
+    margin-left:15% !important;
+} 
+ul.blueBullet li{
+    padding:5px;
+} 
+ul.greyBullet {
+    list-style-image: url('../img/bulletsLogo_grey.png');
+    margin-right:15% !important; 
+    margin-left:15% !important;
+}
+ul.greyBullet li{
+    padding:5px;
+} 
+
+p, h1, h2, h3, h4, h5, h6{
+    margin-right:10% !important;
+    margin-left:10% !important;
+}
+
+.rightLink{
+	
+    background: url('../img/rightLink_black.png') no-repeat scroll 0 10px transparent;
+    padding-left: 9px;
+    color: black !important;
+    clear:right;
+    float:right;
+}
+
+a.blue {
+    background: transparent url('../img/rightLink_blue.png') no-repeat scroll 0px 10px;
+    color: #3379DD !important;
+    font-weight: bold;
+    margin-top: 2px;
+    float:right;
+}
+
+.productDescription{
+    height: 150px;
+}
+.productoMove{
+    padding-top: 20px;
+    padding-bottom:30px;
+}
+
+.moveHeader{
+	
+    background: url('../img/headerInternal_bg.png') no-repeat scroll 0 4px transparent;
+    color: #FFF !important;
+    display:block;
+    max-width:100%;
+    height:auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.move-scrollup {
+  background: none;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 1.5em;
+  padding: .25em .5em;
+  right: 1.5em;
+  
+}
+.move-productos-section{
+    height:100%;
+    /*padding-top:100px;*/
+}
+
+
+@media (min-width: 767px) { 
+    #navigation{
+        position: fixed;
+    }
+}

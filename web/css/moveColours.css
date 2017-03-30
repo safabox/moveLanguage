@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 17, 2016, 12:03:55 PM
+    Author     : Juan Obregon
+*/
+
+.moveTitleColour{
+    background-color: #D8D8D8 !important;
+}
+.moveThemeSongColour{
+    background-color: #D8C0D8 !important;
+}
+.moveLilacesqueColour{
+    background-color: #B988B9 !important;
+}
+.moveGrapeEscapeColour{
+    background-color: #813B81 !important;
+}
+.moveNotQuiteBlackColour{
+    background-color: #303030 !important;
+}

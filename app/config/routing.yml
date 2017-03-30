@@ -1,0 +1,23 @@
+sitio:
+    resource: "@SitioBundle/Resources/config/routing.yml"
+    prefix:   /
+
+empresa:
+    resource: "@EmpresaBundle/Resources/config/routing.yml"
+    prefix:   /
+
+producto:
+    resource: "@ProductoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test:
+    resource: "@TestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+
+

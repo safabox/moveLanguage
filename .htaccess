@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^movelanguage2\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.movelanguage2\.com$
+RewriteRule ^/?$ "http\:\/\/www\.safabox\.com\/movelanguage2\.com\/web\/app_dev\.php" [R=301,L]
+

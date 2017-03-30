@@ -1,0 +1,23 @@
+# This file is auto-generated during the composer install
+parameters:
+    #database_host: 127.0.0.1
+    #database_port: 3306
+    #database_name: move
+    #database_user: move
+    #database_password: move
+    #----------------------#
+    # parametros de la DB  #    
+    #----------------------#
+    database_host: localhost
+    database_port: 3306
+    database_name: safaboxc_move
+    database_user: safaboxc_move
+    database_password: 30182451
+    #----------------------#
+    mailer_transport: smtp
+    mailer_host: mail.safabox.com
+    mailer_user: safaboxc
+    mailer_password: ..Nalpi2010..
+    secret: bd4462a85834a4fd15b8f7dfd073876407c43469
+    sitio.mail_contacto: 'facuobregon@gmail.com'
+    test.mail_contacto: 'examenes@balanguagegroup.com'

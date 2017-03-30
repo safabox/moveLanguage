@@ -1,0 +1,44 @@
+{# empty Twig template #}
+{% extends "SitioBundle:Default:Base.html.twig" %}
+{% block title %}Productos{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block productos %}class="active"{% endblock %}
+{% block body %}
+    <!--
+    <div class="container-fluid">
+        <img class="img-responsive" src="{{asset('img/headerInternal_bg.png')}}" alt=""/>
+    </div
+    -->
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 moveHeader visible-lg">
+            <h1 class="text-right">{% block producto_title %}{% endblock %}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+            <h3 class="text-left">Productos</h3>
+            
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" {% block productos_move %}{% endblock %}><a  href="{{ path('producto_homepage') }}">Productos Move</a></li>
+                    <li role="presentation" {% block move_core %}{% endblock %}><a  href="{{ path('producto_estatica', { 'pagina': 'Move-Core' }) }}">Move Core</a></li>
+                    <li role="presentation" {% block move_coach %}{% endblock %}><a href="{{ path('producto_estatica', { 'pagina': 'Move-Coach' }) }}">Move Coach</a></li>
+                    <li role="presentation" {% block move_corp %}{% endblock %}><a href="{{ path('producto_estatica', { 'pagina': 'Move-Corporate' }) }}">Move Corp</a></li>
+                    <li role="presentation" {% block move_premium %}{% endblock %}><a href="{{ path('producto_estatica', { 'pagina': 'Move-Premium' }) }}">Move Premium</a></li>
+                    <li role="presentation" {% block move_talk %}{% endblock %}><a href="{{ path('producto_estatica', { 'pagina': 'Move-Talk' }) }}">Move Talk</a></li>
+                </ul>
+            
+            <h3 class="text-left visible-lg">Idiomas</h3>
+            <p class="text-left visible-lg">
+                <ul class="blueBullet visible-lg">
+                    <li>Inglés</li>
+                    {%block otherLanguages %}{%endblock%}
+                </ul>
+            </p>
+        </div>
+        <div class="col-lg-10">
+            {% block producto_body %} {% endblock %}
+        </div>
+    </div>
+{% endblock %}

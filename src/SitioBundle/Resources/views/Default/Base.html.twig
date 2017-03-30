@@ -1,0 +1,113 @@
+{# empty Twig template #}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="{{ asset('img/moveLogo.png') }}">
+        <title>{% block title %}{% endblock %} - Move Language</title>
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('css/moveColours.css')}}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/animate.css')}}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/aos.css')}}" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Roboto" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="{{ asset('css/move2.css') }}" rel="stylesheet" type="text/css" />
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body id="{% block id '' %}" data-aos-delay="0" data-aos-duration="400" data-aos-easing="ease-in-out-sine">
+        {% set isGranted = is_granted('ROLE_USER') %}
+        <div class="navbar-wrapper">
+           
+                <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            
+                            <a class="navbar-brand" href="{{ path('sitio_homepage') }}">
+                                <img src="{{asset('img/MoveLogo.png')}}" style="height:55px; margin-top:5%;margin-bottom:5%;">
+                            </a>
+                        </div>
+                        
+                        <div id="navbar" class="navbar-collapse collapse">
+                                                                               
+                            <ul class="nav navbar-nav navbar-right">
+                                <li {% block inicio %}{% endblock %}><a href="{{ path('sitio_homepage') }}">Inicio</a></li>
+                                <li {% block empresa %}{% endblock %}><a href="{{ path('empresa_homepage') }}">Empresa</a></li>
+                                <li {% block productos %}{% endblock %}><a href="{{ path('producto_homepage') }}">Productos</a></li>
+                                <li {% block contacto %}{% endblock %}><a href="{{ path('sitio_contacto') }}">Contacto</a><li>
+                                <li > <a href="{{ path('test_homepage') }}">Placement Test</a></li>
+
+                                {% if isGranted %}
+                                <li class="dropdown" role="presentation">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mi Cuenta<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li role="presentation"> <h5> {{app.user}} </h5> </li>
+                                        <li class="divider" role="separator"></li>
+                                        <li><a href="#"> Mis datos </a></li>
+                                        <li><a href="{{ path('sitio_misinscripciones') }}"> Mis inscripciones </a></li>
+                                        <li class="divider" role="separator"></li>
+                                        <li><a href="{{ path('sitio_logout') }}">Logout</a><li>
+                                    </ul>
+                                </li>
+                                
+                                {% else %}
+                                   
+                                <li><a href="{{path('sitio_login')}}"> Ingresar </a></li>
+                                {% endif %}
+                                <li> <a class="navbar-link" href="mailto:balanguagegroup@balanguagegroup.com?Subject=Consulta" target="_top">Mail</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <div class="navbar-default" style="height:70px;"></div>
+        <div id="container-fluid">
+        {% block body %}{% endblock %}
+        </div>
+        <!--
+        <footer class="footer navbar navbar-inverse navbar-fixed-bottom">
+               <div class="container-fluid">
+                    <strong>Copyright &copy; {{ 'now' | date('Y') }} - Move Language </strong>- 
+                    
+                    <a href="{{ path('pagina_estatica', { 'pagina': 'privacidad' }) }}">Política de Privacidad</a>
+                    -
+                    <a href="mailto:balanguagegroup@balanguagegroup.com?Subject=Oportunidades Laborales" target="_top">Oportunidades Laborales</a>
+                    <br>
+                    <a href="{{ path('sitio_homepage') }}">Inicio</a>
+                    <a href="{{ path('empresa_homepage') }}">Empresa</a>
+                    <a href="{{ path('producto_homepage') }}">Productos</a>
+                    <a href="{{ path('sitio_contacto') }}">Contacto</a>
+                </div>
+            
+        </footer>
+        -->
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ asset('js/vendor/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/aos.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+        <script>
+        
+            AOS.init({
+              easing: 'ease-in-out-sine'
+            });
+
+                
+        </script>
+        <script>
+         $(function () {
+            $('[data-toggle="popover"]').popover();
+          });
+        </script>
+        
+    </body>
+</html>

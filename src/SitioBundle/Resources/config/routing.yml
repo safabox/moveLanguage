@@ -1,0 +1,35 @@
+sitio_homepage:
+    path:     /
+    defaults: { _controller: SitioBundle:Default:index }
+sitio_registrar:
+    pattern: /sitio/registrar/
+    defaults: { _controller: SitioBundle:Default:registrar }
+sitio_contacto:
+    pattern: /sitio/contacto/
+    defaults: { _controller: SitioBundle:Default:contacto }
+sitio_mercadopago:
+    pattern: /sitio/mercadopago/
+    defaults: { _controller: SitioBundle:Default:mercadopago }
+sitio_notificaciones:
+    pattern: /sitio/notificaciones/
+    defaults: { _controller: SitioBundle:Default:notificaciones }
+sitio_inscripcion:
+    pattern: /sitio/inscripcion/
+    defaults: { _controller: SitioBundle:Default:inscripcion }
+sitio_estadoPago:
+    pattern: /sitio/estadoPago/
+    defaults: { _controller: SitioBundle:Default:estadoPago }
+sitio_misinscripciones:
+    pattern: /sitio/misinscripciones/
+    defaults: { _controller: SitioBundle:Default:misinscripciones }
+sitio_login:
+    pattern: /sitio/login/
+    defaults: { _controller: SitioBundle:Default:login }
+sitio_login_check:
+    pattern: /sitio/login_check/
+sitio_logout:
+    pattern: /sitio/logout/
+pagina_estatica:
+    pattern: /sitio/{pagina}/
+    defaults: { _controller: SitioBundle:Default:estatica }
+

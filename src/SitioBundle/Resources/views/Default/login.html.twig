@@ -1,0 +1,49 @@
+{# empty Twig template #}
+{# src/moveLanguage/SitioBunle/Resources/views/Default/login.html.twig #}
+{% extends "SitioBundle:Default:BaseLogin.html.twig" %}
+{% block title  %}Login{% endblock %}
+{% block body %}
+    {% if error %}
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                {{ error.message }}
+            </div>
+            
+            {% endif %}
+            <form class="form-horizontal" action="{{ path('sitio_login_check') }}" method="post">
+                <br/>
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-4">
+                        <input class="form-control" type="text" placeholder="Direccion de correo electronico..." id="username" name="_username" value="{{ last_username }}" />
+                        
+                        <input class="form-control" placeholder="Contraseña..." type="password" id="password" name="_password" />
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-4">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label class="text-center">
+                                      <input class="checkbox-inline" type="checkbox" id="no_cerrar" name="_remember_me" checked /> Recordame
+                                </label>
+                            </div>
+                            <div class="col-xs-6">
+                                <strong>
+                                    <input type="submit" name="login" class="btn btn-success btn-block" style="font-weight:bold;border-radius:20px; " value="Acceder" />
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+            </form>
+            <br/>
+            <p class="text-center">
+                <a href="#"> ¿ Olvidaste tu contraseña ?</a>
+            </p>
+            <br/>
+            <p class="text-center">
+                ¿No tienes cuenta? <a href="{{path('sitio_registrar')}}">Regístrate</a>
+            </p>
+{% endblock %}

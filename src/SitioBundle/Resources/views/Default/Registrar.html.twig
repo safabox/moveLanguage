@@ -1,0 +1,42 @@
+{% extends "SitioBundle:Default:BaseLogin.html.twig" %}
+{% block title %}Registrar{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <form class="form-horizontal" action="{{ path('sitio_registrar') }}" method="post" {{ form_enctype(formulario) }}>
+                {{ form_errors(formulario) }}
+                <br/>
+                {{ form_widget(formulario.name,{ 'attr':{'class' : 'form-control','placeholder':'Nombre...'} } )}}
+                
+                {{ form_widget(formulario.lastName,{ 'attr':{'class' : 'form-control','placeholder':'Apellido...'} })}}
+                
+                {{ form_widget(formulario.email,{ 'attr':{'class' : 'form-control','placeholder':'Email...'} })}}
+                
+                {{ form_row(formulario.password)}}
+                <br/>
+                <p class="text-justify">
+                    {{ form_widget(formulario.allowsEmail,{ 'attr':{'class':'checkbox-inline','checked':'true'} })}} <span class="text-info"> Acepto recibir novedades de Move.</span>
+                </p>
+                
+
+                <br/>
+                <input class="btn btn-success btn-block" style="font-weight:bold;border-radius:20px; " type="submit" value="Registrarme" />
+                <br/>
+            {{ form_rest(formulario) }}
+            </form>
+            <section>
+                <p class="text-center">
+                    Al hacer click en Registrarme, aceptas los <a href="{{path('pagina_estatica',{ 'pagina': 'privacidad' })}}"> términos y condiciones y la política de privacidad de Move.</a>
+                </p>
+            </section>
+            <section>
+                <p class="text-center">
+                    ¿ Ya tienes cuenta ? <a href="{{path('sitio_login')}}"> Iniciar sesión </a>
+                </p>
+            </section>
+        </div>
+    </div>
+{% endblock %}
+

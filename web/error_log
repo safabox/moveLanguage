@@ -1,0 +1,73 @@
+[09-Jan-2016 13:42:10 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:42:12 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/home/safaboxc/public_html/movelanguage2.com\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views" directory does not exist.' in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:94
+Stack trace:
+#0 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1099): Twig_Loader_Filesystem->addPath('/home/safaboxc/...', 'Framework')
+#1 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwig_LoaderService()
+#2 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1065): Symfony\Component\DependencyInjection\Container->get('twig.loader')
+#3 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwigService()
+#4 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(878): Symfony\Component\DependencyIn in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 94
+[09-Jan-2016 13:42:18 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:42:18 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/home/safaboxc/public_html/movelanguage2.com\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views" directory does not exist.' in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:94
+Stack trace:
+#0 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1099): Twig_Loader_Filesystem->addPath('/home/safaboxc/...', 'Framework')
+#1 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwig_LoaderService()
+#2 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1065): Symfony\Component\DependencyInjection\Container->get('twig.loader')
+#3 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwigService()
+#4 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(878): Symfony\Component\DependencyIn in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 94
+[09-Jan-2016 13:42:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:42:31 UTC] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /home/safaboxc/public_html/movelanguage2.com/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php on line 80
+[09-Jan-2016 13:42:41 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:42:41 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/home/safaboxc/public_html/movelanguage2.com\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views" directory does not exist.' in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:94
+Stack trace:
+#0 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1099): Twig_Loader_Filesystem->addPath('/home/safaboxc/...', 'Framework')
+#1 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwig_LoaderService()
+#2 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1065): Symfony\Component\DependencyInjection\Container->get('twig.loader')
+#3 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwigService()
+#4 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(878): Symfony\Component\DependencyIn in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 94
+[09-Jan-2016 13:42:53 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:42:53 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/home/safaboxc/public_html/movelanguage2.com\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views" directory does not exist.' in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:94
+Stack trace:
+#0 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1099): Twig_Loader_Filesystem->addPath('/home/safaboxc/...', 'Framework')
+#1 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwig_LoaderService()
+#2 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1065): Symfony\Component\DependencyInjection\Container->get('twig.loader')
+#3 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwigService()
+#4 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(878): Symfony\Component\DependencyIn in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 94
+[09-Jan-2016 13:43:28 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:43:29 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:43:29 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:44:06 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:47:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:47:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:47:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:47:51 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:48:04 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:48:05 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:48:05 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:49:00 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:49:06 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Jan-2016 13:49:06 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/home/safaboxc/public_html/movelanguage2.com\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views" directory does not exist.' in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:94
+Stack trace:
+#0 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1099): Twig_Loader_Filesystem->addPath('/home/safaboxc/...', 'Framework')
+#1 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwig_LoaderService()
+#2 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1065): Symfony\Component\DependencyInjection\Container->get('twig.loader')
+#3 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwigService()
+#4 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(878): Symfony\Component\DependencyIn in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 94
+[09-Jan-2016 13:56:08 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 18:58:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 18:58:34 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/home/safaboxc/public_html/movelanguage2.com\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views" directory does not exist.' in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:94
+Stack trace:
+#0 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1099): Twig_Loader_Filesystem->addPath('/home/safaboxc/...', 'Framework')
+#1 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwig_LoaderService()
+#2 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(1065): Symfony\Component\DependencyInjection\Container->get('twig.loader')
+#3 /home/safaboxc/public_html/movelanguage2.com/app/bootstrap.php.cache(2187): appProdProjectContainer->getTwigService()
+#4 /home/safaboxc/public_html/movelanguage2.com/app/cache/prod/appProdProjectContainer.php(878): Symfony\Component\DependencyIn in /home/safaboxc/public_html/movelanguage2.com/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 94
+[10-Jan-2016 18:58:40 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 18:58:52 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 19:23:26 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:30:49 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:31:23 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:31:28 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:34:29 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:34:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:36:07 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Jan-2016 21:37:39 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0

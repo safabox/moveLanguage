@@ -1,0 +1,32 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+    firewalls:
+        frontend:
+            pattern: ^/*
+            anonymous: ~
+            form_login:
+                login_path: sitio_login
+                check_path: sitio_login_check
+            logout:
+                path: sitio_logout
+                target: sitio_homepage
+            remember_me:
+                key: moveLanguageRemember
+                lifetime: 120
+    access_control:
+        - { path: ^/sitio/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/sitio/registrar, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/sitio/contacto, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/sitio/privacidad, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/sitio/notificaciones, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/sitio/test, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/sitio/*, roles: [ROLE_USER,ROLE_ADMIN] }
+    providers:
+        usuarios:
+            entity: { class: SitioBundle\Entity\User , property: email }
+            
+    encoders:
+            SitioBundle\Entity\User: { algorithm: sha512, iterations: 10 }
+            #plaintext
+            #{ algorithm: sha512, iterations: 10 }

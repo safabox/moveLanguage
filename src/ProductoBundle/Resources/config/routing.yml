@@ -1,0 +1,23 @@
+producto_homepage:
+    path:     /producto/
+#    defaults: { _controller: ProductoBundle:Default:index }
+    defaults: { _controller: ProductoBundle:Default:test }
+producto_test:
+    path:     /producto/test/
+    defaults: { _controller: ProductoBundle:Default:test }
+
+
+addProducto:
+    path:    /producto/add/
+    defaults: { _controller: ProductoBundle:Default:add  }
+
+modifyProducto:
+    path:    /producto/modify/{id}/
+    defaults: { _controller: ProductoBundle:Default:modify  }
+getProducto:
+    path:    /producto/get/
+    defaults: { _controller: ProductoBundle:Default:get }
+producto_estatica:
+    path:    /producto/{pagina}/
+    defaults:  {  _controller: ProductoBundle:Default:producto  }
+

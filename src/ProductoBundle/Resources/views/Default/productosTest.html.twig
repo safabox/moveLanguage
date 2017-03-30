@@ -1,0 +1,15 @@
+{# empty Twig template #}
+{% extends "ProductoBundle:Default:producto.base.html.twig" %}
+{% block title %}Productos{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block productos_move %} class="active" {% endblock %}
+{% block producto_title %} Productos Test{% endblock %}
+{% block producto_body %} 
+    <div class="container-fluid">
+        {% for producto in productos %}
+            <br>
+            {{ producto.description }}
+        {% endfor%}
+    </div>
+{% endblock%}

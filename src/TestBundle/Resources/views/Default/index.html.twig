@@ -1,0 +1,44 @@
+{% extends "SitioBundle:Default:Base.html.twig" %}
+{% block title %}TEST{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-lg-12 moveHeader visible-lg">
+                <h2 class="text-right text-bold">PLACEMENT TEST</h2>
+            </div>
+    </div>    
+   
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            
+            <br>
+            <form class="form-horizontal" action="{{ path('test_homepage') }}" method="post" {{ form_enctype(formulario) }}>
+                
+                {% if formulario.nombre is defined %}
+                    {{ form_errors(formulario) }}
+                    <br/>
+                    {{ form_widget(formulario.nombre,{ 'attr':{'class' : 'form-control','placeholder':'Nombre...'} } )}}
+
+                    {{ form_widget(formulario.email,{ 'attr':{'class' : 'form-control','placeholder':'Email...'} })}}
+
+                    <br/>
+                    {{ form_rest(formulario) }}
+                {% endif %}
+                
+                <input class="btn btn-success btn-block" style="font-weight:bold;border-radius:20px; " type="submit" value="Comenzar Test" />
+                <br/>
+
+            </form>
+                
+                
+                
+                
+        </div>
+    </div >
+        
+</div>
+
+{% endblock %}

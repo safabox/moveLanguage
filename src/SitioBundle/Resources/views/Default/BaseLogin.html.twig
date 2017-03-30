@@ -1,0 +1,35 @@
+{# empty Twig template #}
+{# empty Twig template #}
+{# src/moveLanguage/SitioBunle/Resources/views/Default/BaseLogin.html.twig #}
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="{{ asset('img/bulletsLogo.png') }}">
+        <title>{% block title %} {% endblock %}- Move Language</title>
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        
+        <link href="{{ asset('css/move2.css') }}" rel="stylesheet" type="text/css" />
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <div class="container-fluid">
+            <section style="height:75px;">
+                <a href="{{ path('sitio_homepage') }}">
+                    <img src="{{asset('img/MoveLogo.png')}}" class="img-responsive center-block" style="height:70px;margin-top:20px;">
+                </a>
+            </section>
+            <hr class="featurette-divider">
+            {% block body %}
+            
+            {% endblock body %}
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ asset('js/vendor/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    </body>
+</html>

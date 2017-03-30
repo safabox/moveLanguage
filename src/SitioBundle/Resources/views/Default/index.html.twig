@@ -1,0 +1,332 @@
+{% extends "SitioBundle:Default:Base.html.twig" %}
+{% block title %}Inicio{% endblock %}
+{% block stylesheets %}
+
+<link href="{{ asset('css/animate.css')}}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block inicio %}class="active"{% endblock%}
+{% block body %}
+    <div class="container-fluid container-full">
+        <div class="row row-full">
+            <div id="myCarousel" class="carousel slide move-carousel" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active move-carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!--<div class="col-lg-offset-1 col-lg-5 visible-lg">
+                                    <img  src="{{ asset('img/Carrousell1.jpg') }}" >
+                                </div>
+                                <div class="col-lg-6">-->
+                                <div class="col-lg-12 col-md-12 col-sm-12 jumbotron text-center">
+                                    <h1 class="move-carousel-title">Tu vida. Tu carrera.<br>Tus idiomas.</h1>
+                                    <p class="text-center move-carousel-text">Move Language es tu profesor particular online y mucho más. Aprende idiomas con profesionales, desde tu PC y sin horarios ni restricciones.</p>
+                                    <div class="col-lg-offset-3 col-lg-6">
+                                        <p><a class="btn btn-lg btn-success btn-block" href="{{ path('sitio_inscripcion') }}" role="button">Empieza Ya!</a></p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="item move-carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!--<div class="col-lg-offset-1 col-lg-5 visible-lg">
+                                    <img  src="{{ asset('img/Carrousell2.jpg') }}" >
+                                </div>
+                                <div class="col-lg-6">-->
+                                <div class="col-lg-12 col-md-12 col-sm-12 jumbotron text-center">
+                                    <h1 class="move-carousel-title">Aprende idiomas online con profesionales.</h1>
+                                    <p class="text-center move-carousel-text">Move Language es tu profesor particular online y mucho más. Aprende idiomas con profesionales, desde tu PC y sin horarios ni restricciones.</p>
+                                    <div class="col-lg-offset-3 col-lg-6">
+                                        <p><a class="btn btn-lg btn-success btn-block" href="{{ path('sitio_inscripcion') }}" role="button">Empieza Ya!</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item move-carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!--
+                                <div class="col-lg-offset-1 col-lg-5 visible-lg">
+                                    
+                                </div>
+                                <div class="col-lg-6">-->
+                                <div class="col-lg-12 col-md-12 col-sm-12 jumbotron text-center">
+                                    <h1 class="move-carousel-title">Metodología aplicada.</h1>
+                                    <p class="text-center move-carousel-text">Move Language es tu profesor particular online y mucho más. Aprende idiomas con profesionales, desde tu PC y sin horarios ni restricciones.</p>
+                                    <div class="col-lg-offset-3 col-lg-6">
+                                        <p><a class="btn btn-lg btn-success btn-block" href="{{ path('sitio_inscripcion') }}" role="button">Empieza Ya!</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item move-carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!--<div class="col-lg-offset-1 col-lg-5 visible-lg">
+                                    <img  src="{{ asset('img/Carrousell4.jpg') }}" >
+                                </div>
+                                <div class="col-lg-6">-->
+                                <div class="col-lg-12 col-md-12 col-sm-12 jumbotron text-center">
+                                    <h1 class="move-carousel-title">Empieza a aprender ya!</h1>
+                                    <p class="text-center move-carousel-text">Move Language es tu profesor particular online y mucho más. Aprende idiomas con profesionales, desde tu PC y sin horarios ni restricciones.</p>
+                                    <div class="col-lg-offset-3 col-lg-6">
+                                        <p><a class="btn btn-lg btn-success btn-block" href="{{ path('sitio_inscripcion') }}" role="button">Empieza Ya!</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item move-carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <!--<div class="col-lg-offset-1 col-lg-5 visible-lg">
+                                    <img  src="{{ asset('img/Carrousell4.jpg') }}" >
+                                </div>
+                                <div class="col-lg-6">-->
+                                <div class="col-lg-12 col-md-12 col-sm-12 jumbotron text-center">
+                                    <h1 class="move-carousel-title">Descubri tu nivel</h1>
+                                    <p class="text-center move-carousel-text">Descubri tu nivel realizando nuestro Test de forma gratuita.</p>
+                                    <div class="col-lg-offset-3 col-lg-6">
+                                        <p><a class="btn btn-lg btn-success btn-block" href="{{ path('test_homepage') }}" role="button">Realizar Test!</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- carrousel -->
+        </div><!-- row full -->
+    </div><!--container-->                
+    <div class="page-header">
+        <h1 class="text-center">Productos Destacados</h1>      
+    </div>  
+    <div class="container-fluid"> 
+    
+        <div class="row aos-item aos-init aos-animate move-section" data-aos="fade-up" data-aos-duration="750">
+            <div class="col-lg-3 col-md-3 productoMove">
+            <!--<h3 class="text-center">Move Core</h3>-->
+                <p class="text-center">
+                    <img class="img-responsive" src="{{asset('img/logo_moveCore.png')}}" alt=""/>
+                </p>
+                <p class="text-left productDescription">
+                    Move Core es un curso basado en una modalidad de autoaprendizaje, con una estrategia de explicación teórica, demostración, ejercitación, evaluación y ejecución.
+                </p>
+                <p class="text-center">
+                    <img src="{{ asset('img/monitor.png')}}" title="Acceso ilimitado a la plataforma las 24 hs" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Unidades de autoaprendizaje interactivas, ejercitación de autoevaluación, laboratorio de fonética, evaluaciones de progreso.">
+                    <img src="{{ asset('img/tabla.png')}}" title="Informes automáticos" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Informes automáticos de seguimiento y certificado de aprobación del curso.">
+                </p>
+                <p class="text-right">
+                    <a href="{{ path ('producto_estatica', { 'pagina': 'Move-Core' })}}">
+                        <!--<img src="{{asset('img/icon_Core.png')}}" />-->
+                        <span class="rightLink">Ver más...</span>
+                    </a>
+                    <a class="rightLink blue" href="{{ path ('sitio_registrar')}}">Inscribite Ya!</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 productoMove">
+                <p class="text-center">
+                    <img class="img-responsive" src="{{asset('img/logo_moveCoach.png')}}" alt=""/>
+                </p>
+                <p class="text-left productDescription">
+                    Con los mismos beneficios que <strong>Move Core</strong>, pero con la ventaja de contar con la posibilidad de consultar tus dudas con la asistencia colaborativa de un tutor y de un blog de estudiantes en tu misma situación.
+                </p>
+                <p class="text-center">
+                    <img src="{{ asset('img/monitor.png')}}" title="Acceso ilimitado a la plataforma las 24 hs" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Unidades de autoaprendizaje interactivas, ejercitación de autoevaluación, laboratorio de fonética, evaluaciones de progreso.">
+                    <img src="{{ asset('img/tabla.png')}}" title="Informes automáticos" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Informes automáticos de seguimiento y certificado de aprobación del curso.">
+                    <img src="{{ asset('img/auriculares.png')}}" title="Ayuda" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Ayuda técnica personalizada.">
+                </p>
+                <p class="text-right">
+                    <a href="{{ path ('producto_estatica', { 'pagina': 'Move-Coach' })}}">
+                        <!--<img src="{{asset('img/icon_Coach.png')}}" />-->
+                        <span class="rightLink" >Ver más...</span>
+                    </a>
+                    <a class="rightLink blue" href="{{ path ('sitio_registrar')}}">Inscribite Ya!</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 productoMove">
+                <p class="text-center">
+                    <img class="img-responsive" src="{{asset('img/logo_movePrem.png')}}" alt=""/>
+                </p>
+                <p class="text-left productDescription">
+                    Move Premium es un servicio de capacitación online con todas las ventajas de la tecnología y la seguridad de contar con un tutor disponible para ti en cada clase.
+                </p>
+                <p class="text-center">
+                    <img src="{{ asset('img/monitor.png')}}" title="Acceso ilimitado a la plataforma las 24 hs" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Unidades de autoaprendizaje interactivas, ejercitación de autoevaluación, laboratorio de fonética, evaluaciones de progreso.">
+                    <img src="{{ asset('img/tabla.png')}}" title="Informes automáticos" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Informes automáticos de seguimiento y certificado de aprobación del curso.">
+                    <img src="{{ asset('img/auriculares.png')}}" title="Ayuda" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Ayuda técnica personalizada.">
+                    <img src="{{ asset('img/reloj.png')}}" title="Comunidad" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Acceso a comunidad de estudiantes, contacto sincrónico y asincrónico a través de un chat y blog.">
+                </p>
+                <p class="text-right">
+                    <a href="{{ path ('producto_estatica', { 'pagina': 'Move-Premium' })}}">
+                        <!--<img src="{{asset('img/icon_Premium.png')}}" />-->
+                        <span class="rightLink" >Ver más...</span>
+                    </a>
+                    <a class="rightLink blue" href="{{ path ('sitio_registrar')}}">Inscribite Ya!</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 productoMove">
+                <p class="text-center">
+                    <img class="img-responsive" src="{{asset('img/logo_moveCorp.png')}}" alt=""/>
+                </p>
+                <p class="text-left productDescription">
+                    La capacitación a empresas es nuestra fortaleza. Move dedica recursos exclusivos a la formación de objetivos y contenidos orientados a las necesidades e interes de cada compañia.
+                </p>
+                <p class="text-center">
+                    <img src="{{ asset('img/monitor.png')}}" title="Acceso ilimitado a la plataforma las 24 hs" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Unidades de autoaprendizaje interactivas, ejercitación de autoevaluación, laboratorio de fonética, evaluaciones de progreso.">
+                    <img src="{{ asset('img/tabla.png')}}" title="Informes automáticos" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Informes automáticos de seguimiento y certificado de aprobación del curso.">
+                    <img src="{{ asset('img/auriculares.png')}}" title="Ayuda" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Ayuda técnica personalizada.">
+                    <img src="{{ asset('img/reloj.png')}}" title="Comunidad" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Acceso a comunidad de estudiantes, contacto sincrónico y asincrónico a través de un chat y blog.">
+                    <img src="{{ asset('img/hombrecito.png')}}" title="Profesor en linea" data-toggle="popover" data-trigger="hover" data-placement = "top" data-content="Clases sincrónicas con un profesor en línea.">
+                </p>
+                <p class="text-right">
+                    <a href="{{ path ('producto_estatica', { 'pagina': 'Move-Corporate' })}}">
+                        <!--<img src="{{asset('img/icon_Corp.png')}}" />-->
+                        <span class="rightLink" >Ver más...</span>
+                    </a>
+                    <a class="rightLink blue" href="{{ path ('sitio_registrar')}}">Inscribite Ya!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- seccion como funciona  -->
+    
+    <hr class="featurette-divider">
+    <div class="container-fluid move-section">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="750">
+                    <h1 class="move-blue">Como Funciona</h1>
+                </div>
+                <div class="aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="750">
+                    <h3 class="move-blue">Seleccioná</h3>
+                    <p>Elíge la modalidad que prefieras de acuerdo a tus necesidades.</p>
+                </div>
+                <div class="aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="750">
+                    <h3 class="move-blue">Regístrate</h3>
+                    <p>Regístrate sin moverte de tu casa.</p>
+                </div>
+                <div class="aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="750">
+                    <h3 class="move-blue">Verificá tu nivel</h3>
+                    <p>Determina tu nivel actual mediante el test.</p>
+                </div>
+                <div class="aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="750">
+                    <h3 class="move-blue">Ingresá</h3>
+                    <p>Accedé a los cursos y coaiching online dentro de la plataforma.</p>
+                </div>
+                <!--<img class="img-responsive img-rounded img-thumbnail center-block image-move" src="{{asset('img/comoFunciona.png')}}" alt=""/>-->
+            </div>
+            <div class="col-lg-6 visible-lg">
+            <!-- Button trigger modal -->
+                <a type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                    <img src="http://www.movelanguage.com/images/video.jpg" alt="" />
+                </a>
+            <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content" style="margin-top:0;padding-top:0;margin-left:0;padding-left:0;margin-right:0;padding-right:0;margin-bottom:0;padding-bottom:0;">
+                            <div class="modal-body" >
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  wmode="transparent" width="550" height="390" id="movie_name" align="middle" >
+                                    <param name="movie" value="http://www.movelanguage.com/images/video.swf"/>
+                                    <!--[if !IE]>-->
+                                    <object type="application/x-shockwave-flash" data="http://www.movelanguage.com/images/video.swf" wmode="transparent"  width="550" height="390">
+                                        <param name="movie" value="http://www.movelanguage.com/images/video.swf" />
+                                    <!--<![endif]-->
+                                        <a href="http://www.adobe.com/go/getflash">
+                                            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
+                                        </a>
+                                    <!--[if !IE]>-->
+                                    </object>
+                                    <!--<![endif]-->
+                                </object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- seccion quienes somos  -->
+    
+    
+    <hr class="featurette-divider">
+    <div class="container-fluid move-section">
+        <div class="row aos-item aos-init aos-animate " data-aos="fade-up" data-aos-duration="750">
+        
+            <div class="col-lg-4 col-md-4">
+                <h3 class="text-left">Quiénes Somos</h3>
+                <p class="text-left">
+                    MoveLanguage es el resultado de una continua dedicación a la investigación y ansias de
+                    mejora de nuestros profesionales, uniendo experiencia y alta tecnología para brindar un 
+                    servicio diferente que se adecúe a las necesidades y posibilidades de cada uno
+                    <br/>
+                    <a href=" {{ path ("empresa_homepage")}}"><span class="rightLink"> Ver más...</span></a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3 class="text-left">NewsLetter</h3>
+                <p class="text-left">
+                    Suscribite al newsletter de <strong>Move Language</strong>, ingresando tu
+                    e-mail a continuación.
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="example@domain.com">
+                    <br/>
+                    <input type="submit" class="btn btn-success" value="Suscribite!">
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="text-left">Idiomas</h3>
+                        <p class="text-left">
+                            <ul class="blueBullet">
+                                <li>Inglés</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="text-left">Oportunidades Laborales</h3>
+                        <p class="text-left">
+                            Te gustaría trabajar con nosotros? <a href="mailto:balanguagegroup@balanguagegroup.com?Subject=Oportunidades Laborales" target="_top"> cargá tu CV aquí</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $(document).ready(function(){
+            $("body").append("<div class='move-scrollup'><a class=\"btn btn-social-icon btn-home\" href=\"#\"><i class=\"fa fa-home\"></i></a></div>");
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 1000) $('.move-scrollup').fadeIn();
+                else $('.move-scrollup').fadeOut();
+            });
+        $(document).on("click",".move-scrollup",function(e){
+            e.preventDefault();
+            $("html, body").stop().animate({ scrollTop: 0 }, "slow");
+            });
+        });
+    </script>
+{%endblock%}
+

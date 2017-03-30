@@ -1,0 +1,59 @@
+{% extends "SitioBundle:Default:Base.html.twig" %}
+{% block title %}TEST{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block body %}
+
+<div class="container-fluid">
+<div class="row">
+        <div class="col-lg-12 moveHeader visible-lg">
+            <h2 class="text-right text-bold">PLACEMENT TEST</h2>
+        </div>
+</div>    
+    
+    </br>
+    <div class="row">
+         <h3>Muchas Gracias por realizar el TEST, nos estaremos contactando con usted a la brevedad...<h3>        
+    </div>
+
+
+    {% if nivel == 1 %}
+        <div class="row">
+            <h3>Su Nivel es Inicial<h3>
+        </div>
+    {% endif %}
+ 
+    {% if nivel == 2 %}
+        <div class="row">
+            <h3>Su Nivel es Elemental<h3>
+        </div>
+    {% endif %}
+    
+    {% if nivel == 3 %}
+        <div class="row">
+            <h3>Su Nivel es Pre-Intermedio<h3>
+        </div>
+    {% endif %}
+    
+    {% if nivel == 4 %}
+        <div class="row">
+            <h3>Su Nivel es Intermedio<h3>
+        </div>
+    {% endif %}
+    
+    {% if nivel == 5 %}
+        <div class="row">
+            <h3>Su Nivel es Intermedio Alto<h3>
+        </div>
+    {% endif %}
+    
+    {% if nivel == 6 %}
+        <div class="row">
+            <h3>Su Nivel es Avanzado<h3>
+        </div>
+    {% endif %}
+    
+
+</div>
+
+{% endblock %}
