@@ -1,6 +1,6 @@
 empresa_homepage:
-    path:     /empresa
-    defaults: { _controller: EmpresaBundle:Default:index }
+    path:     /empresa/
+    defaults: { _controller: EmpresaBundle:Empresa:index }
 empresa_cambioElearning:
-    path:     /empresa/un-cambio-a-elearning
-    defaults: { _controller: EmpresaBundle:Default:elearning }
+    path:     /empresa/un-cambio-a-elearning/
+    defaults: { _controller: EmpresaBundle:Empresa:elearning }

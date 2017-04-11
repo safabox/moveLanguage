@@ -7,17 +7,15 @@ use ProductoBundle\Entity\Producto;
 use ProductoBundle\Repository\ProductoRepository;
 use Symfony\Component\HttpFoundation\Response;
 
-
-
-class DefaultController extends Controller
+class ProductoController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ProductoBundle:Default:index.html.twig');
+        return $this->render('ProductoBundle:Producto:index.html.twig');
     }
     public function testAction()
     {
-        return $this->render('ProductoBundle:Default:productos.html.twig');
+        return $this->render('ProductoBundle:Producto:productos.html.twig');
     }
     public function addAction(){
         $producto = new Producto();
@@ -52,11 +50,10 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getEntityManager();
         $productos= $em->getRepository('ProductoBundle:Producto')->getProductos();
                    
-        return $this->render('ProductoBundle:Default:productosTest.html.twig',array('productos'=>$productos));
+        return $this->render('ProductoBundle:Producto:productosTest.html.twig',array('productos'=>$productos));
         
     }
     public function productoAction($pagina){
-        return $this->render('ProductoBundle:Default:'.$pagina.'.html.twig');
+        return $this->render('ProductoBundle:Producto:'.$pagina.'.html.twig');
     }
-   
 }

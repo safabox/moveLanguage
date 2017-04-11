@@ -14,7 +14,7 @@ use Doctrine\ORM\Query;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 
-class DefaultController extends Controller
+class TestController extends Controller
 {
     public function indexAction(Request  $request)
     {        
@@ -49,7 +49,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('test_nivel', array('nivel' => '1'))); 
         }   
         
-        return $this->render('TestBundle:Default:index.html.twig' ,array('formulario' => $formulario->createView()));
+        return $this->render('TestBundle:Test:index.html.twig' ,array('formulario' => $formulario->createView()));
 
     }      
     
@@ -257,7 +257,7 @@ class DefaultController extends Controller
 
 					$ejecuto = $this->get('mailer')->send($message); 
 
-					return $this->render('TestBundle:Default:fin.html.twig' ,array( 'nivel' => 6 ));
+					return $this->render('TestBundle:Test:fin.html.twig' ,array( 'nivel' => 6 ));
                 }
                 else
                 {
@@ -316,11 +316,11 @@ class DefaultController extends Controller
 
                 $ejecuto = $this->get('mailer')->send($message); 
 
-                return $this->render('TestBundle:Default:fin.html.twig' ,array( 'nivel' => $nivel ));
+                return $this->render('TestBundle:Test:fin.html.twig' ,array( 'nivel' => $nivel ));
             }
         }   
 
-        return $this->render('TestBundle:Default:nivel.html.twig' ,array(  'preguntas' => $preguntas, 'respuestas' => $respuestas));
+        return $this->render('TestBundle:Test:nivel.html.twig' ,array(  'preguntas' => $preguntas, 'respuestas' => $respuestas));
 
     }
     

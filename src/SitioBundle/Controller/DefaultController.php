@@ -16,7 +16,11 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('SitioBundle:Default:index.html.twig');
+        $repository = $this->getDoctrine()->getRepository('ProductoBundle:Producto');
+        $productos = $repository->getBestSellers();
+        //return $this->render('SitioBundle:Default:misInscripciones.html.twig',array("inscripciones"=>$inscripciones));    
+        //return $this->render('MainBundle:Main:index.html.twig',array("productos"=>$productos));
+        return $this->render('SitioBundle:Default:index.html.twig',array("productos"=>$productos));
     }
    
     public function loginAction(){

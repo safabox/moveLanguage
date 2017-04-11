@@ -16,8 +16,8 @@ parameters:
     #----------------------#
     mailer_transport: smtp
     mailer_host: mail.safabox.com
-    mailer_user: safaboxc
-    mailer_password: ..Nalpi2010..
+    mailer_user: noreply@safabox.com
+    mailer_password: noreply123!
     secret: bd4462a85834a4fd15b8f7dfd073876407c43469
     sitio.mail_contacto: 'facuobregon@gmail.com'
-    test.mail_contacto: 'examenes@balanguagegroup.com'
+    test.mail_contacto: 'facuobregon@gmail.com'

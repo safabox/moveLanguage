@@ -22,6 +22,13 @@ class ProductoRepository extends EntityRepository {
         
         return $query->getResult();
     }
+    public function getBestSellers(){
+        $em= $this->getEntityManager();
+        $dql = 'SELECT p from ProductoBundle:Producto p where p.bestSeller=1';
+        $query= $em->createQuery($dql);
+        
+        return $query->getResult();
+    }
     public function addProducto(\ProductoBundle\Entity\Producto $producto){
         try{
             $em = $this->getEntityManager();

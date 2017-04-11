@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/wamp/www/moveLanguage/src/ProductoBundle/Entity/Caracteristica.php</file>
             <file>file:/C:/wamp/www/moveLanguage/src/SitioBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/wamp/www/moveLanguage/src/SitioBundle/Resources/config/routing.yml</file>
-            <file>file:/C:/wamp/www/moveLanguage/app/config/parameters.yml</file>
+            <file>file:/C:/wamp/www/moveLanguage/src/ProductoBundle/Entity/Idioma.php</file>
+            <file>file:/C:/wamp/www/moveLanguage/src/ProductoBundle/Entity/Producto.php</file>
+            <file>file:/C:/wamp/www/moveLanguage/src/ProductoBundle/Repository/ProductoRepository.php</file>
+            <file>file:/C:/wamp/www/moveLanguage/src/SitioBundle/Resources/views/Default/index.html.twig</file>
         </group>
     </open-files>
 </project-private>

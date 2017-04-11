@@ -1,9 +1,9 @@
 test_homepage:
     path:     /test/
-    defaults: { _controller: TestBundle:Default:index }
+    defaults: { _controller: TestBundle:Test:index }
 test_nivel:
     pattern: /test/nivel/
-    defaults: { _controller: TestBundle:Default:nivel }
+    defaults: { _controller: TestBundle:Test:nivel }
 test_fin:
     pattern: /test/fin/
-    defaults: { _controller: TestBundle:Default:nivel }    
+    defaults: { _controller: TestBundle:Test:nivel }    
